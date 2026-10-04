@@ -1,29 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+<!DOCTYPE html> <!-- Tipo de documento html -->
+<html lang="en"> <!-- Define que el idioma es inglés -->
+<head> <!-- Informacion que no se ve directamente -->
+<meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales, letras 'ñ' y acentos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el tamaño de la página al ancho de pantallas móviles -->
+<title>Formularios en HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+<!-- Enlace externo para cargar los íconos de la librería Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+</head> <!-- Cierre del head -->
+<body> <!-- Cuerpo -->
 
-</head>
-<body>
-<h2>Formularios con Radioboton</h2>
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-Selecciona el maximo de estudios que tienes:
-<br>
-<input type="radio" name="estudios" value="1">Sin estudios <br>
-<input type="radio" name="estudios" value="2">Primaria <br>
-<input type="radio" name="estudios" value="3">Secundaria <br>
-<input type="radio" name="estudios" value="4">Preparatoria <br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
-</body>
-</html>
+<h2>Formularios con Radioboton</h2> <!-- Título -->
+
+<form action="" method="post"> <!-- Inicio del formulario -->
+
+Ingresa tu nombre: <!-- Texto que le dice al ususario que ingrese su nombre -->
+<input type="text" name="nombre"> <!-- Campo para el nombre -->
+
+<br> <!-- Salto de línea -->
+
+Selecciona el maximo de estudios que tienes: <!-- Instrucción para la lista de selección -->
+<br> <!-- Salto de línea -->
+
+<input type="radio" name="estudios" value="1">Sin estudios <br> <!-- Opción de botón de radio para 'Sin estudios' (solo permite elegir una opción del grupo 'estudios') -->
+<input type="radio" name="estudios" value="2">Primaria <br> <!-- Opción de botón de radio para 'Primaria' -->
+<input type="radio" name="estudios" value="3">Secundaria <br> <!-- Opción de botón de radio para 'Secundaria' -->
+<input type="radio" name="estudios" value="4">Preparatoria <br> <!-- Opción de botón de radio para 'Preparatoria' -->
+
+<input type="submit" value="enviar"> <!-- Botón de envío del formulario -->
+<input type="reset" value="borrar"> <!-- Botón para borrar los datos del formulario -->
+
+</form> <!-- Cierre del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->
