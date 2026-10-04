@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+<!DOCTYPE html> <!-- Tipo de documento html -->
+<html lang="en"> <!-- Define que el idioma es inglés -->
+<head> <!-- Informacion que no se ve directamente -->
+<meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la pantalla para dispositivos móviles -->
+<title>Formularios en HTML</title> <!-- Título que se muestra en la pestaña del navegador -->
+<!-- Enlace externo para cargar la librería de íconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+</head> <!-- Cierre -->
+<body> <!-- Cuerpo de la página -->
 
-</head>
-<body>
-<h2>Formulario para contraseñas</h2>
-<form action="" method="post">
+<h2>Formulario para contraseñas</h2> <!-- Título -->
 
+<form action="" method="post"> <!-- Formulario (indica cómo y a dónde se enviarían los datos) -->
 Ingresa tu usuario:
-<input type="text" name="usuario">
-Ingresa tu contraseña:
-<input type="password" name="pass">
-<br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
-</body>
-</html>
+<input type="text" name="usuario"> <!-- Campo de texto para escribir el nombre del usuario -->
+
+Ingresa tu contraseña: <!-- campo de contraseña -->
+<input type="password" name="pass"> <!-- Campo de texto oculto para escribir la contraseña -->
+
+<br> <!-- Salto de línea -->
+
+<input type="submit" value="enviar"> <!-- Botón para procesar y enviar el formulario -->
+<input type="reset" value="borrar"> <!-- Botón para limpiar todos los campos del formulario -->
+
+</form> <!-- Cierre del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->
