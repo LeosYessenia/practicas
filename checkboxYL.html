@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+<!DOCTYPE html> <!-- Tipo de documento html -->
+<html lang="en"> <!-- Dfine que el idioma es inglés -->
+<head> <!-- Infromacion que no se ve directamente -->
+<meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales, letras 'ñ' y acentos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el tamaño de la página al ancho de pantallas móviles -->
+<title>Formularios en HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+<!-- Enlace externo para cargar los íconos de la librería Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+</head> <!-- Cierre del head -->
+<body> <!-- Cuerpo -->
 
-</head>
-<body>
-<h2>Formularios con checkbox</h2>
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
+<h2>Formularios con checkbox</h2> <!-- Título -->
 
-<br>
-Selecciona los lenguajes que conozcas:
-<br>
-<input type="checkbox" name="Java">Java <br>
-<input type="checkbox" name="Python"> Python <br>
-<input type="checkbox" name="C#">C# <br>
-<input type="checkbox" name="Flutter"> Flutter <br>
-</form>
-</body>
-</html>
+<form action="" method="post"> <!-- Inicio del formulario -->
+
+Ingresa tu nombre: <!-- Texto que le dice al ususario que ingrese su nombre -->
+<input type="text" name="nombre"> <!-- Campo para el nombre -->
+
+<br> <!-- Salto de línea -->
+
+Selecciona los lenguajes que conozcas: <!-- Instrucción para la lista de selección -->
+<br> <!-- Salto de línea -->
+
+<input type="checkbox" name="Java">Java <br> <!-- verificación para 'Java' que permite seleccionar muchas opciones -->
+<input type="checkbox" name="Python"> Python <br> <!-- verificación para 'Python' -->
+<input type="checkbox" name="C#">C# <br> <!-- verificación para 'C#' -->
+<input type="checkbox" name="Flutter"> Flutter <br> <!-- verificación para 'Flutter' -->
+
+</form> <!-- Cierre del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->
