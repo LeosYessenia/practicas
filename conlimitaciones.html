@@ -1,30 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+<!DOCTYPE html> <!-- Tipo de documento html -->
+<html lang="en"> <!-- Define que el idioma es inglés -->
+<head> <!-- Informacion que no se ve directamente -->
+<meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales, letras 'ñ' y acentos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el tamaño de la página al ancho de pantallas móviles -->
+<title>Formularios en HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+<!-- Enlace externo para cargar los íconos de la librería Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+</head> <!-- Cierre del head -->
+<body> <!-- Cuerpo -->
 
-</head>
-<body>
-<h2>Formulario con limitaciones</h2>
-<form action="" method="post">
-Ingresa tu nombre:
+<h2>Formulario con limitaciones</h2> <!-- Título -->
+<form action="" method="post"> <!-- Inicio del formulario -->
+Ingresa tu nombre: <!-- Texto que le dice al usuario que ingrese su nombre -->
 <!-- Desahbilitacion de campo -->
-<input type="text" name="nombre" disabled><br>
+<input type="text" name="nombre" disabled><br> <!-- Campo desactivado que no permite edición ni interactuar con él -->
+
 <!-- Limitacion de caracteres -->
-Contraseña:
-<input type="password" name="pass" maxlength="5"><br>
+Contraseña: <!-- Texto para la contraseña -->
+<input type="password" name="pass" maxlength="5"><br> <!-- Campo de contraseña para máximo 5 caracteres -->
+
 <!-- Solo lectura -->
-Comentarios:
-<textarea name="comentarios" readonly>
+Comentarios: <!-- Texto para los comentarios -->
+<textarea name="comentarios" readonly> <!-- Área de texto visible pero protegida contra modificaciones -->
 
 Este es mi comentario y no se puede borrar
-</textarea><br>
-</form>
-</body>
-</html>
+</textarea><br> <!-- Cierre del área de texto y salto de línea -->
+
+</form> <!-- Cierre del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->
