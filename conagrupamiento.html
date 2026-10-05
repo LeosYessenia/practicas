@@ -1,40 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+<!DOCTYPE html> <!-- Tipo de documento html -->
+<html lang="en"> <!-- Define que el idioma es inglés -->
+<head> <!-- Informacion que no se ve directamente -->
+<meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales, letras 'ñ' y acentos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el tamaño de la página al ancho de pantallas móviles -->
+<title>Formularios en HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+<!-- Enlace externo para cargar los íconos de la librería Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+</head> <!-- Cierre del head -->
+<body> <!-- Cuerpo -->
 
-</head>
-<body>
-<h2>Formularios con agrupamiento</h2>
-<form action="" method="post">
-<fieldset>
-<legend>Datos personales</legend>
-Nombre y apellido:
-<input type="text" name="nombre_apellido"><br>
-Documento valido:
-<input type="file" name="documento"><br>
-Fecha de nacimiento:
+<h2>Formularios con agrupamiento</h2> <!-- Título -->
 
-<input type="date" name="fecha_nacimiento">
-</fieldset>
-<fieldset>
-<legend>Datos de estudio:</legend>
-Nombre de la escuela:
-<input type="text" name="escuela"><br>
-Certificado valido:
-<input type="file" name="certificado"><br>
-Fecha de egreso:
-<input type="date" name="fecha_egreso">
-</fieldset>
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-</form>
-</body>
-</html>
+<form action="" method="post"> <!-- Inicio del formulario -->
+
+<fieldset> <!-- Agrupa visual y lógicamente un conjunto de elementos dentro del formulario con un borde -->
+<legend>Datos personales</legend> <!-- Título del grupo para el campo fieldset -->
+Nombre y apellido: <!-- Texto descriptivo para pedir el nombre y apellido -->
+<input type="text" name="nombre_apellido"><br> <!-- Campo para el nombre y apellido con salto de línea -->
+Documento valido: <!-- Texto descriptivo para solicitar documento -->
+<input type="file" name="documento"><br> <!-- Campo de entrada para subir archivos con salto de línea -->
+Fecha de nacimiento: <!-- Texto para pedir la fecha de nacimiento -->
+
+<input type="date" name="fecha_nacimiento"> <!-- Campo para seleccionar una fecha mediante un calendario -->
+</fieldset> <!-- Cierre del primer grupo de campos -->
+
+<fieldset> <!-- Agrupa otro conjunto de elementos dentro del formulario -->
+<legend>Datos de estudio:</legend> <!-- Título del grupo para el segundo fieldset -->
+Nombre de la escuela: <!-- Texto descriptivo para el nombre de la escuela -->
+<input type="text" name="escuela"><br> <!-- Campo para el nombre de la escuela con salto de línea -->
+Certificado valido: <!-- Texto para solicitar certificado -->
+<input type="file" name="certificado"><br> <!-- Campo de para subir archivos con salto de línea -->
+Fecha de egreso: <!-- Texto para la fecha de egreso -->
+<input type="date" name="fecha_egreso"> <!-- Campo de para seleccionar una fecha de salida -->
+</fieldset> <!-- Cierre del segundo grupo de campos -->
+
+<br> <!-- Salto de línea -->
+
+<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button> <!-- Botón para enviar datos usando la etiqueta button, con ícono de avión de papel -->
+<button type="reset">Borrar <i class="fa fa-trash"></i></button> <!-- Botón para borrar datos usando la etiqueta button, con ícono de papelera -->
+
+</form> <!-- Cierre del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->
